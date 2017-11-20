@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="demo.xsl"?>
+<root>
+    <env>
+        <domain>local</domain>
+    </env>
+    <login>
+        <uid>git/wurui</uid>
+    </login>
+    <p>
+        <title>demo page</title>
+        <desc>this is deme page</desc>
+        <owner>openxsl</owner>
+        <icon>//oxm1.cc/img/app_default.png</icon>
+    </p>
+    <data>
+            <lbs-products>
+        <i>
+            <title>
+                wallet
+            </title>
+            <brief>
+                wallet
+            </brief>
+            <price>
+                7321.04
+            </price>
+            <location>
+                light-weight laptop
+            </location>
+            <score>
+                4.04
+            </score>
+            <comment_count>
+                63618
+            </comment_count>
+            <img>
+                //a.oxm1.cc/img/fox.jpg
+            </img>
+            <img_count>
+                7155
+            </img_count>
+        </i>
+    </lbs-products>
+    </data>
+</root>
