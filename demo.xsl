@@ -13,7 +13,10 @@
       </head>
       <body>
         <div class="layout">
-          <xsl:call-template name="wurui.ctrip-travel-list" />
+          <xsl:call-template name="wurui.ctrip-travel-list">
+            <xsl:with-param name="test">Hello</xsl:with-param>
+            <xsl:with-param name="_lbs-products" select="data/lbs-products[@ADAPTERID='159a8cdb2fb83a629aafb1021' and @test='123']"/>
+          </xsl:call-template>
         </div>
         <script><![CDATA[
           require.config({
@@ -25,7 +28,7 @@
             },
             packages:[{name:"oxm",location:'https://a.oxm1.cc/oxm'}]
           });
-          require(['jquery','oxjs','asset/index'],function(undefine,oxjs,Mod){
+          require(['zepto','oxjs','asset/index'],function(undefine,oxjs,Mod){
           Mod && Mod.init && Mod.init($('.J_OXMod'));
           })
         ]]></script>

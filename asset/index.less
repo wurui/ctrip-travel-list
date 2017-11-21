@@ -1,0 +1,136 @@
+.oxmod-ctrip-travel-list{
+	.mainpic{
+		//width: 100%;
+		//padding-top: 60%;
+		height: 0;
+		background-repeat: no-repeat;
+		background-position: center;
+		-webkit-background-size:auto 100%;
+	}
+	a{
+		color:#333;
+	}
+	li{
+		padding:15px 15px 5px 0%;
+		margin-left: 15px;
+		overflow: hidden;
+		.mainpic{
+			width:112px;
+			height: 85px;
+			//height: 0;
+			//padding-top: 30%;
+			float:left;
+			//margin-left: -70%;
+			margin-right: 15px;
+		}
+	}
+	.title{
+		font-size: 16px;
+		font-weight: 400;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow:ellipsis;
+	}
+	.brief{
+		font-size: 12px;
+		line-height: 1.8;
+
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow:ellipsis;
+	}
+	.score{
+
+		font-size: 12px;
+		color: #999;
+		&:before{
+			content: attr(data-score)'分';
+			color:#09f;
+			margin-right: 10px;
+		}
+	}
+	.location{
+
+		font-size: 12px;
+		color: #999;
+		display: inline-block;
+		max-width: 34%;
+		overflow: hidden;
+		white-space: nowrap;
+		text-overflow:ellipsis;
+	}
+
+	.spot{
+		padding: 5px 0;
+		
+	}
+	.price{
+		float: right;
+		margin-top: -5px;
+		text-align: right;
+	}
+	.price{
+		em{
+			color:#f60;
+			font-size: 20px;
+			font-style: normal;
+			//font-weight: 700;
+			&:before{
+				content: '\a5';
+				font-size: 12px;
+				font-weight: 400;
+			}
+			&:after{
+				content: '起';
+				font-size: 12px;
+				font-weight: 400;
+				color:#999;
+			}
+		}
+		del{
+			color:#ccc;
+			font-size: 12px;
+			margin-top: 2px;
+			&:before{
+				content: '\a5';
+				font-size: 12px;
+				text-decoration: none;
+			}
+			margin-left: 6px;
+		}
+
+	}
+	.tags{
+		i{
+			font-size: 10px;
+			display: inline-block;
+			border:1px solid;
+			border-radius: 2px;
+			color:#f90;
+			border-color:#f90;
+			margin-right: 3px;
+			font-style: normal;
+			line-height: 1;
+			padding: 1px;
+			&:nth-child(2n){
+				color:#0af;
+				border-color:#0af;
+			}
+		}
+		del{
+			float: right;
+			color: #999;
+			&:before{
+				content: '\a5';
+
+			}
+		}
+	}
+	.bottom{
+		width:100%;
+		float: left;
+		color:#999;
+		padding: 8px 0;
+		font-size: 12px;
+	}
+}
