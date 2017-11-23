@@ -3,7 +3,7 @@
         <!-- className 'J_OXMod' required  -->
         <div class="J_OXMod oxmod-ctrip-travel-list" ox-mod="ctrip-travel-list">
             <ul ox-refresh="append">
-            	<xsl:for-each select="data/lbs-products/i[position() &lt;= 10]">
+            	<xsl:for-each select="data/lbs-products/i[position() &lt;= 6]">
             		<li>
             			<a href="{href}">
 	            			<img class="mainpic"
