@@ -12,7 +12,8 @@ define(['oxjs'],function(OXJS){
 						//console.log('got')
 						$mod.OXRefresh({ 
 							"lbs-products":{
-								pageIndex: ++currentIndex
+								$index: ++currentIndex,
+								//$limit:10
 							}
 						})
 					}
