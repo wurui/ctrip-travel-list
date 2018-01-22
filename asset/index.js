@@ -10,10 +10,10 @@ define(['oxjs'],function(OXJS){
 				TO=setTimeout(function(){
 					if(document.body.scrollHeight - win.height() -win.scrollTop() < 200){
 						//console.log('got')
-						$mod.OXRefresh({ 
+						$('ul',$mod).OXRefresh({ 
 							"lbs-products":{
 								$index: ++currentIndex,
-								//$limit:10
+								$limit:6
 							}
 						})
 					}
